@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Welcome | Examission</title>
+</head>
+<body>
+    <div class="shadow-md sticky top-0 backdrop-blur-lg z-10">
+        <div class="flex justify-between w-10/12 mx-auto py-8">
+            <h1 class="text-blue-500 font-bold text-xl">Examission Web</h1>
+
+            <ul class="flex gap-10 text-slate-500">
+                <li>
+                    <a href="#beranda">Beranda</a>
+                </li>
+                <li>
+                    <a href="#about">Tentang</a>
+                </li>
+                <li>
+                    <a href="/auth/login.html">Ujian</a>
+                </li>
+                <li>
+                    <a href="/auth/login.html" class="bg-blue-500 hover:bg-blue-400 transition-all px-3 py-2 text-white rounded-lg">Login</a>
+                    <a href="/auth/register.html" class="bg-transparent px-3 py-2 text-blue-500 border border-blue-500 hover:bg-blue-500 hover:text-white transition-all rounded-lg">Register</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="beranda" class="scroll-smooth" style="background-image: url('img/bg-hero-home.svg')">
+        <div class="hero w-10/12 min-h-screen -mt-20 mx-auto items-center grid grid-cols-2">
+            <div class="w-3/4">
+                <h1 class="text-5xl font-extrabold text-slate-700 mx-auto">Selamat Datang di <span class="text-blue-500">Examission</span></h1>
+                <p class="text-slate-500 mt-5 mb-10">
+                    Sebuah website untuk ujian secara daring.
+                </p>
+                <a href="" class="bg-blue-500 hover:bg-blue-400 px-4 py-2 text-white rounded-lg text-xl">
+                    Mulai Ujian Sekarang
+                </a>
+            </div>
+            <div class="items-center flex justify-between">
+                <img src="img/hero-home-1.svg" alt="" class="h-[350px] rounded-3xl mt-10 shadow-xl hover:shadow-2xl hover:-translate-y-2 ease-in-out duration-300">
+                <div class="mt-[60px]">
+                    <img src="img/hero-home-2.svg" alt="" class="h-[260px] rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-2 ease-in-out duration-300">
+                    <img src="img/hero-home-3.svg" alt="" class="h-[260px] rounded-2xl mt-12 shadow-xl hover:shadow-2xl hover:-translate-y-2 ease-in-out duration-300">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="about" class="about mt-60 mb-40 scroll-smooth snap-start mx-auto">
+        <div class="grid grid-cols-2 w-7/12 mx-auto items-center">
+            <div class="w-3/4">
+                <img src="img/about-img.svg" alt="" class="rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-2 ease-in-out duration-300">
+            </div>
+            <div class="items-center">
+                <h1 class="text-5xl font-extrabold text-slate-700 mx-auto mb-4">
+                    Apa itu <span class="text-blue-500">Examission</span>?
+                </h1>
+                <p class="text-justify text-slate-500 text-md">
+                    Examission merupakan sebuah aplikasi berbasis website yang digunakan untuk melakukan ujian secara daring, dengan tipe soal yang digunakan yaitu essai. Aplikasi ini dikembangkan untuk penelitian tugas akhir pada program studi Informatika, Universitas Udayana.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

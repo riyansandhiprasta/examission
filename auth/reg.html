@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Save Web Form Data to Spreadsheets</title>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/L562MEjQT1rAIyX8/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+    <div class="bg-white shadow-2xl mx-auto w-80 p-10 mt-20 rounded-xl mb-20">
+        <form id="myForm">
+            <label>nama</label>
+            <input name="nama" />
+            <br/>
+            <label>nim</label>
+            <input name="nim" />
+            <br/>
+            <label>jurusan</label>
+            <input name="jurusan" />
+            <br/>
+            <label>password</label>
+            <input name="password" />
+            <br/>
+        </form>
+    </div>
+	<button onclick='SubForm()'>Submit</button>
+</body>
+</html>

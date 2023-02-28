@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Register | Examission</title>
+    <script>
+        // function SubForm(){
+        //     $.ajax({
+        //         url: 'https://api.apispreadsheets.com/data/L562MEjQT1rAIyX8/',
+        //         type: 'post',
+        //         data: $("#form-reg").serializeArray(),
+        //         success: function(){
+		// 			alert("Form Data Submitted :)")
+		// 		},
+		// 		error: function(){
+		// 			alert("There was an error :(")
+		// 		}
+        //     });
+        // }
+    </script>
+</head>
+<body>
+    <div class="px-20 py-10">
+        <a href="/" class="text-blue-500 text-sm">Ke Beranda</a>
+    </div>
+
+    <div class="bg-white shadow-2xl mx-auto w-80 p-10 -mt-10 rounded-xl mb-20">
+        <div class="mx-auto flex justify-center">
+            <h1 class="text-blue-500 font-bold text-2xl mb-3">Register</h1>
+        </div>
+        <form id="form-reg" class="mt-6">
+            <label class="text-slate-700 text-sm" for="">Nama Lengkap</label>
+            <input type="text" name="nama" id="nama" class="w-full rounded-full mt-1 mb-4 bg-slate-100 h-8 px-2" required>
+
+            <label class="text-slate-700 text-sm" for="">NIM</label>
+            <input type="text" name="nim" id="nim" class="w-full rounded-full mt-1 mb-4 bg-slate-100 h-8 px-2" required>
+
+            <label class="text-slate-700 text-sm" for="">Jurusan</label>
+            <input type="text" name="jurusan" id="jurusan" class="w-full rounded-full mt-1 mb-4 bg-slate-100 h-8 px-2" required>
+
+            <label class="text-slate-700 text-sm" for="">Password</label>
+            <input type="text" name="password" id="password" class="w-full rounded-full mt-1 mb-4 bg-slate-100 h-8 px-2" required>
+        </form>
+
+        <div class="flex justify-center">
+            <a href="/auth/login.html" class="bg-blue-500 px-6 py-2 rounded-full mt-6 text-white font-semibold">Register</a>
+        </div>
+
+        <div class="flex justify-center mt-4">
+            <a href="/auth/login.html" class="text-blue-500 text-sm">Login</a>
+        </div>
+        
+    </div>
+</body>
+
+
+</html>
